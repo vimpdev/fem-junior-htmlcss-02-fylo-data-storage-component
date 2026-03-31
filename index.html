@@ -1,31 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
+  <meta name="theme-color" content="#1d2c67">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Fylo data storage component | Frontend Mentor</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
 
-  You’ve used 815 GB of your storage
+  <main>
+    <h1 class="visually-hidden">Fylo Data Storage Component</h1>
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <section class="storage" aria-labelledby="storage-title">
+      <h2 class="visually-hidden" id="storage-title">Storage usage</h2>
+
+      <div class="storage__header">
+        <img src="./assets/images/logos/logo.svg" alt="Fylo logo" class="storage__brand">
+
+        <ul class="storage__icons">
+          <li class="storage__icon">
+            <img src="./assets/images/icons/icon-document.svg" alt="">
+          </li>
+          <li class="storage__icon">
+            <img src="./assets/images/icons/icon-folder.svg" alt="">
+          </li>
+          <li class="storage__icon">
+            <img src="./assets/images/icons/icon-upload.svg" alt="">
+          </li>
+        </ul>
+      </div>
+
+      <div class="storage__body">
+        <p class="storage__usage" id="storage-usage">You’ve used <strong>815 GB</strong> of your storage</p>
+
+        <div class="storage__bar" role="progressbar" aria-valuenow="815" aria-valuemin="0" aria-valuemax="1000"
+          aria-labelledby="storage-usage" aria-valuetext="815 GB used out of 1000 GB">
+          <div class="storage__bar-fill"></div>
+        </div>
+
+        <ul class="storage__limits" aria-label="Storage limits">
+          <li>0 GB</li>
+          <li>1000 GB</li>
+        </ul>
+
+
+        <p class="storage__remaining"><strong class="storage__value">185</strong> GB Left</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    <small>
+      Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank" rel="noopener noreferrer"
+        class="attribution__link">Frontend
+        Mentor</a> – Coded by <a href="https://www.frontendmentor.io/profile/vimpdev" target="_blank"
+        rel="noopener noreferrer" class="attribution__link">VIMP</a>
+    </small>
+  </footer>
 </body>
+
 </html>
