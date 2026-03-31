@@ -15,7 +15,7 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 ## 🔗 Links
 
 - 🌎 [Live site](https://vimpdev.github.io/fem-junior-htmlcss-02-fylo-data-storage-component/)
-<!-- - 📌 [Frontend Mentor Solution]() -->
+- 📌 [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/fylo-data-storage-component-responsive-and-accessible-progress-bar-XGAVKR2nGT)
 
 ---
 
